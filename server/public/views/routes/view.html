@@ -1,0 +1,21 @@
+<div class = "pet-div" ng-repeat = "pet in myPets.results">
+<p >
+  {{ pet.pet_name }}
+</p>
+<p>
+    {{ pet.pet_type }}
+
+</p>
+<p>
+    {{ pet.pet_age }}
+
+</p>
+
+<img ng-src="{{ pet.pet_pic }}" alt="Description" />
+<button ng-click="deletePet(pet._id)">Delete</button>
+
+
+
+
+
+</div>
